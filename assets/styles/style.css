@@ -18,17 +18,9 @@ h1 {
 }
 
 h2,h3,h4 {
+    margin-top: 2em;
     margin-bottom: 1em;
     color: aqua;
-}
-
-.mainbox {
-    background: linear-gradient(2deg, #565, #656);
-    border-radius: 1em;
-    margin: 2em;
-    padding: 2em;
-    text-align: center;
-    
 }
 
 #search2 {
