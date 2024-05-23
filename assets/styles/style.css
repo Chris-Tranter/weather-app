@@ -8,6 +8,40 @@
 }
 
 body {
-    background: #222;
-    color: #fff;
+    background: linear-gradient(110deg, #232, #323);
+    text-align: center;
 }    
+
+h1 {
+    margin-top: 1em;
+    color: #565;
+}
+
+h2,h3,h4 {
+    margin-bottom: 1em;
+    color: aqua;
+}
+
+.mainbox {
+    background: linear-gradient(2deg, #565, #656);
+    border-radius: 1em;
+    margin: 2em;
+    padding: 2em;
+    text-align: center;
+    
+}
+
+#search2 {
+    font-size: large;
+    border: 0.2em solid wheat;
+}
+
+button {
+    font-size: large;
+    border: 0.2em solid wheat;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
