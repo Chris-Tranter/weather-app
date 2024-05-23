@@ -7,9 +7,10 @@ let forecast = {
     cardiff: "17"
 };
 
-// create search and submit elements
+// create -search submit OUTPUT- elements
 const inputElement = document.getElementById("city-input");
 const buttonElement = document.getElementById("submit-button");
+const outputElement = document.getElementById("output-area");
 
 // when -search- is clicked a function starts *if* the city matches the API's =correct answer *else* =error 
 buttonElement = addEventListener('click', function() {
@@ -17,9 +18,9 @@ buttonElement = addEventListener('click', function() {
     const sanitizedUserInput = userInput.toLowerCase();
     let output;
     if (sanitizedUserInput in forecast) {
-        output = `This is the current weather in ${userInput} it looks like ${forecast[sanitizedUserInput]}°c`;
+        output = `The current weather in ${userInput} looks like ${forecast[sanitizedUserInput]}°c`;
     } else {
         output = `${userInput} doesn't match with our database. Please try again`;
     }
-    console.log(output);
+    outputElement.innerText = output;
 });
