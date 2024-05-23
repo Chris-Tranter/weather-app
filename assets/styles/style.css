@@ -17,18 +17,18 @@ h1 {
     color: #565;
 }
 
-h2,h3,h4 {
+p, h2,h3,h4 {
     margin-top: 2em;
     margin-bottom: 1em;
     color: aqua;
 }
 
-#search2 {
+#city-input {
     font-size: large;
     border: 0.2em solid wheat;
 }
 
-button {
+#submit-button {
     font-size: large;
     border: 0.2em solid wheat;
     cursor: pointer;
