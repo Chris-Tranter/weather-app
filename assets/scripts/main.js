@@ -25,7 +25,5 @@ buttonElement.addEventListener("click", function() {
     outputElement.innerText = output;
 });
 
-function playSound(fileName) {
-    let sound = new Audio(`assets/sounds/${fileName.mp3}`);
-    sound.play();
-}
+const audio = new Audio();
+audio.src = "../assets/sounds/soft.mp3";
