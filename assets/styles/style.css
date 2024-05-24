@@ -23,13 +23,20 @@ p, h2,h3,h4 {
     color: aqua;
 }
 
+/* User input area */
 #city-input {
+    margin: 0 10vw
     font-size: large;
     border: 0.2em solid wheat;
 }
 
+.input-group {
+   padding: 5%;
+}
+
 #submit-button {
-    font-size: large;
+    background-color: #232;
+    font-size: x-large;
     border: 0.2em solid wheat;
     cursor: pointer;
 }

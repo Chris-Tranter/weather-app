@@ -13,7 +13,7 @@ const buttonElement = document.getElementById("submit-button");
 const outputElement = document.getElementById("output-area");
 
 // when -search- is clicked a function starts *if* the city matches the API's =correct answer *else* =error 
-buttonElement = addEventListener('click', function() {
+buttonElement = addEventListener("click", function() {
     const userInput = inputElement.value;
     const sanitizedUserInput = userInput.toLowerCase();
     let output;
@@ -24,3 +24,8 @@ buttonElement = addEventListener('click', function() {
     }
     outputElement.innerText = output;
 });
+
+function playSound(fileName) {
+    let sound = new Audio(`assets/sounds/${fileName.mp3}`);
+    sound.play();
+}
