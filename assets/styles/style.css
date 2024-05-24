@@ -24,20 +24,22 @@ p, h2,h3,h4 {
 }
 
 /* User input area */
-#city-input {
-    margin: 0 10vw
-    font-size: large;
-    border: 0.2em solid wheat;
-}
-
 .input-group {
    padding: 5%;
 }
 
-#submit-button {
-    background-color: #232;
-    font-size: x-large;
+.input-group-text {
     border: 0.2em solid wheat;
+}
+
+#city-input {
+    border: 0.2em solid wheat;
+}
+
+#submit-button {
+    border: solid;
+    background-color: #565;
+    color: wheat;
     cursor: pointer;
 }
 
