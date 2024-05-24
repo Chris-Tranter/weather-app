@@ -22,7 +22,9 @@ fetch(url)
         return response.json();
     }) 
     .then(function (data) {
-        console.log(data.main.temp);
+        let city = data.name;
+        let temp = data.main.temp;
+        outputElement.innerHTML = `The current weather in ${city} looks like ${temp}°c`;
 });
 
 
