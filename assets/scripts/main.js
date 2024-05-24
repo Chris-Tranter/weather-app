@@ -6,6 +6,8 @@ const units = "metric";
 const inputElement = document.getElementById("city-input");
 const buttonElement = document.getElementById("submit-button");
 const outputElement = document.getElementById("output-area");
+const imageElement = document.getElementById("status-image");
+const statusElement = document.getElementById("status-text");
 
 // when -search- is clicked a function starts *if* the city matches the API's =correct answer *else* =error 
 buttonElement.addEventListener("click", function() {
@@ -19,6 +21,15 @@ buttonElement.addEventListener("click", function() {
     .then(function (data) {
         let city = data.name;
         let temp = data.main.temp;
-        outputElement.innerHTML = `The current weather in ${city} looks like ${temp}°c`;
-});
+        let condition = data.weather[0].main;
+        let imgApiCode = data.weather[0].icon;
+
+        //open weathers Live icon apiURL = https://openweathermap.org/img/wn/10d@2x.png
+        let imgUrl = `https://openweathermap.org/img/wn/${imgApiCode}@2x.png`;
+
+        outputElement.innerText = `The current weather in ${city} looks like ${temp}°c`;
+        statusElement.innerText = `${condition}`;
+        imageElement.src = imgUrl;
+
+}); 
 });
